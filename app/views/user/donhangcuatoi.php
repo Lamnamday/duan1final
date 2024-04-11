@@ -21,6 +21,7 @@
                     <td><?= $order['tienTrinh'] ?></td>
                     <td><?= $order['diaChi'] ?></td>
                     <td><a href="?url=chitietdonhanguser&maDonHang=<?= $order['maDonHang'] ?>">Chi tiết</a></td>
+                    <td><a onclick="return confirm('Bạn chắc chứ?')" href="?url=xoadonhanguser&maDonHang=<?= $order['maDonHang'] ?>">Hủy đơn hàng</a></td>
                 </tr>
                 <?php endforeach ?>
             </table>
