@@ -1,3 +1,3 @@
--- IMPORT FILE DATABASE duanmau.sql để chạy
+-- IMPORT FILE DATABASE duan1.sql để chạy
 
 -- Cấu hình DATABASE: app -> models -> env.php
