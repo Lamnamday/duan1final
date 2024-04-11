@@ -395,6 +395,11 @@
         }
         include VIEWS_URL . "user/thanhtoan.php";
     }
+    function dltO(){
+        $maDonHang = $_GET["maDonHang"];
+        deleteOrder($maDonHang);
+        header("Location: ?url=donhangcuatoi");
+    }
     function donHangCuaToi(){
         $maKhachHang = $_SESSION["user"][0]['maKhachHang'];
         $orders = selectOrderByUser($maKhachHang);
